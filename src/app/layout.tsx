@@ -2,7 +2,7 @@ import type {Metadata} from "next";
 import React from "react";
 import "./globals.css";
 import Footer from "@/components/footer/Footer";
-import Navigation from "@/components/navigation/Navigation";
+import Header from "../components/header/Header";
 
 export const metadata: Metadata = {
     title: "Redacted Remastered",
@@ -13,7 +13,7 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
     return (
         <html lang="en" className="h-full antialiased">
         <body className="min-h-full flex flex-col">
-        <Navigation/>
+        <Header/>
         <main>
             {children}
         </main>
